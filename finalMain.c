@@ -28,7 +28,7 @@ int main(void) {
 	//Function 2
 	//original position = 0
 	//This function n = 1, means change position 0→1
-	struct Ribbon ribbonn = { "Hello world! I'm Haruna Fujishima!", 0, 30 };
+	struct Ribbon ribbonn = { "Hello world! I'm TANAKA HAPPY!", 0, 30 };
 	printf("Original position alphabet is.. %c\n", ribbonn.text[0]);
 	advance(&ribbonn, 1);
 
