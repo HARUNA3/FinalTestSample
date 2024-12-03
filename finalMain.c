@@ -10,7 +10,7 @@ void overUnder(int n, struct Ribbon ribbons[], int size, int* over, int* under, 
 int appendAtPosition(struct Ribbon* ribbon, const char str[]);
 void printRibbon(const char filename[], struct Ribbon ribbons[], int size, int longForm);
 
-struct Ribbon
+struct Ribbon // Question4's answer
 {
 	char text[MAX + 1];
 	int pos;
@@ -27,7 +27,9 @@ int main(void) {
 
 	//Function 2
 	//original position = 0
+	//This function n = 1, means change position 0→1
 	struct Ribbon ribbonn = { "Hello world! I'm Haruna Fujishima!", 0, 30 };
+	printf("Original position alphabet is.. %c\n", ribbonn.text[0]);
 	advance(&ribbonn, 1);
 
 	//Function 3
@@ -40,6 +42,7 @@ int main(void) {
 	struct Ribbon ribbon = { "Hot air Baloon" };
 	char str[] = "Dog";
 	result = appendAtPosition(&ribbon, str);
+	printf("Function4: New string is .. %s\n", ribbon.text);
 	printf("Function4: New string length is .. %d\n\n", result);
 
 	//Function 5
@@ -61,6 +64,8 @@ void advance(struct Ribbon* ribbon, int n) {
 	
 	//Write code here
 
+	printf("Original position alphabet is.. %c\n", ribbon->text[n]);
+
 }
 
 void overUnder(int n, struct Ribbon ribbons[], int size, int* over, int* under, int* equals) {
@@ -71,6 +76,7 @@ void overUnder(int n, struct Ribbon ribbons[], int size, int* over, int* under, 
 int appendAtPosition(struct Ribbon* ribbon, const char str[]) {
 	
 	//Write code here
+	
 }
 
 void printRibbon(const char filename[], struct Ribbon ribbons[], int size, int longForm) {
