@@ -46,7 +46,7 @@ int main(void) {
 	printf("Function4: New string length is .. %d\n\n", result);
 
 	//Function 5
-	struct Ribbon ribbons[] = { {"HARUNA"},{"FUJISHIMA"},{"DOG"},{"CAT"},{"SUNNY"},{"Programing"},
+	struct Ribbon ribbons[] = { {"HAPPY"},{"TANAKA"},{"DOG"},{"CAT"},{"SUNNY"},{"Programing"},
 								{"JAZZ"},{"jazz"},{"Random word"},{"Hello world!!"} };
 	printRibbon("input.txt", ribbons, 10, 0);
 
