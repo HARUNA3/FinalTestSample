@@ -23,7 +23,7 @@ the result shown in input.txt file.
 Not represented on terminal or other result window.
 In the file, if these data copied, your functino work properly.
 '''''''''''''
-HAPPY
+HAPPY\n
 TANAKA
 DOG
 CAT
